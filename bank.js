@@ -39,8 +39,17 @@ Bank.prototype.returnTotal = function(){
 }
 
 Bank.prototype.findAverage = function(){
-
   return this.returnTotal()/this.accountCount();
+}
+
+Bank.prototype.typeTotal = function(type){
+  var total = 0;
+  for (account of this.accounts) {
+    if( account.type === type){
+      total += account.value;
+    }
+  }
+  return total;
 }
 
 module.exports = Bank;

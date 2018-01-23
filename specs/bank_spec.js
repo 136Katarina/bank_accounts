@@ -48,6 +48,10 @@ describe('bank', function(){
     assert.strictEqual(bank.findAverage(), 4025);
   })
 
+  it('should return total of account type', function(){
+    assert.strictEqual(bank.typeTotal("Personal"), 2100);
+  })
+
 
 
 
