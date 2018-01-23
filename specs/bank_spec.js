@@ -36,6 +36,10 @@ describe('bank', function(){
     assert.strictEqual(bank.findByName("Katarina"),account1);
   })
 
+  it('should find largest account', function(){
+    assert.strictEqual(bank.findLargest(), account4);
+  })
+
 
 
 

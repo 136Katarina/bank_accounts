@@ -19,4 +19,14 @@ Bank.prototype.findByName = function(name){
   }
 };
 
+Bank.prototype.findLargest = function(){
+  var largestAccount = this.accounts[0];
+  for(account of this.accounts){
+    if (account.value > largestAccount.value){
+      largestAccount = account;
+    }
+  }
+  return largestAccount;
+}
+
 module.exports = Bank;
