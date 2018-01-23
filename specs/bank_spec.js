@@ -40,6 +40,13 @@ describe('bank', function(){
     assert.strictEqual(bank.findLargest(), account4);
   })
 
+  it('should return total', function(){
+    assert.strictEqual(bank.returnTotal(), 16100);
+  })
+
+  it('should return average', function(){
+    assert.strictEqual(bank.findAverage(), 4025);
+  })
 
 
 

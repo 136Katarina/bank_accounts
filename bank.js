@@ -29,4 +29,18 @@ Bank.prototype.findLargest = function(){
   return largestAccount;
 }
 
+
+Bank.prototype.returnTotal = function(){
+  var total = 0;
+  for(account of this.accounts){
+    total += account.value;
+  }
+  return total;
+}
+
+Bank.prototype.findAverage = function(){
+
+  return this.returnTotal()/this.accountCount();
+}
+
 module.exports = Bank;
