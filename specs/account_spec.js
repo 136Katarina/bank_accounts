@@ -13,4 +13,12 @@ describe('account', function(){
   it('should have a name', function(){
     assert.strictEqual(account1.name,'Katarina');
   })
+
+  it('should have a value', function(){
+    assert.strictEqual(account2.value, 2000);
+  })
+
+  it('should have a type', function(){
+    assert.strictEqual(account1.type, "Business");
+  })
 })
